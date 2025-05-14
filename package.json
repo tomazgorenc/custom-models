@@ -1,0 +1,42 @@
+{
+  "name": "@tomazgorenc/custom-models",
+  "version": "1.0.0",
+  "description": "TypeScript Model Library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "lint": "eslint . --ext .ts",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomazgorenc/custom-models.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@tomazgorenc"
+  },
+  "keywords": [
+    "typescript",
+    "models",
+    "library"
+  ],
+  "author": "tomazgorenc",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tomazgorenc/custom-models/issues"
+  },
+  "homepage": "https://github.com/tomazgorenc/custom-models#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.17",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.2",
+    "typescript": "^5.8.3"
+  }
+}
